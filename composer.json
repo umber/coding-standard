@@ -1,6 +1,6 @@
 {
   "name": "umber/coding-standard",
-  "description": "A simplified authentication with implementations for Symfony",
+  "description": "A close to PSR-2 coding standards",
   "type": "library",
 
   "require": {
