@@ -1,6 +1,6 @@
 {
   "name": "umber/coding-standard",
-  "description": "A close to PSR-2 coding standards",
+  "description": "A close to PSR-2 coding standards, based on Doctrine just a little relaxed",
   "type": "library",
 
   "require": {
