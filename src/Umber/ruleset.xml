@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<ruleset name="Umber">
+  <description>The Umber coding standard.</description>
+
+  <!-- base -->
+  <rule ref="Doctrine">
+
+    <!-- disable -->
+    <exclude name="Generic.Files.LineLength" />
+    <exclude name="Generic.Formatting.SpaceAfterNot" />
+    <exclude name="Generic.Formatting.MultipleStatementAlignment" />
+
+    <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags" />
+    <exclude name="Generic.Commenting.DocComment.TagValueIndent" />
+
+    <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+    <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed" />
+
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming" />
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousExceptionNaming" />
+    <exclude name="SlevomatCodingStandard.Classes.SuperfluousInterfaceNaming" />
+
+    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing.IncorrectWhitespaceBeforeColon" />
+    <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingPropertyTypeHint" />
+
+    <exclude name="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly.ReferenceViaFallbackGlobalName" />
+
+
+    <!-- replaced -->
+    <exclude name="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse" />
+    <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
+  </rule>
+
+  <rule ref="Generic.Commenting.DocComment">
+    <exclude name="Generic.Commenting.DocComment.MissingShort" />
+    <exclude name="Generic.Commenting.DocComment.ContentAfterOpen" />
+    <exclude name="Generic.Commenting.DocComment.ContentBeforeClose" />
+  </rule>
+
+  <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+    <properties>
+      <property
+        name="usefulAnnotations"
+        type="array"
+        value="
+          @after,
+          @afterClass,
+          @AfterMethods,
+          @Attribute,
+          @Attributes,
+          @before,
+          @beforeClass,
+          @BeforeMethods,
+          @covers,
+          @coversDefaultClass,
+          @coversNothing,
+          @dataProvider,
+          @depends,
+          @deprecated,
+          @doesNotPerformAssertions,
+          @Enum,
+          @expectedDeprecation,
+          @expectedException,
+          @expectedExceptionCode,
+          @expectedExceptionMessage,
+          @expectedExceptionMessageRegExp,
+          @group,
+          @Groups,
+          @IgnoreAnnotation,
+          @internal,
+          @Iterations,
+          @link,
+          @ODM\,
+          @ORM\,
+          @requires,
+          @Required,
+          @Revs,
+          @runInSeparateProcess,
+          @runTestsInSeparateProcesses,
+          @see,
+          @Target,
+          @test,
+          @throws,
+          @uses,
+          @Route
+        "
+      />
+    </properties>
+  </rule>
+</ruleset>
