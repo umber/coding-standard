@@ -1,7 +1,7 @@
 {
   "name": "umber/coding-standard",
   "description": "A close to PSR-2 coding standards, based on Doctrine just a little relaxed",
-  "type": "library",
+  "type": "phpcodesniffer-standard",
 
   "require": {
     "doctrine/coding-standard": "4.0.0",
