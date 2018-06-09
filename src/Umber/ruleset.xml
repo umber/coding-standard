@@ -14,6 +14,7 @@
     <exclude name="Generic.Commenting.DocComment.TagValueIndent" />
 
     <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+    <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
     <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed" />
 
     <exclude name="SlevomatCodingStandard.Classes.SuperfluousAbstractClassNaming" />
