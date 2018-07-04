@@ -10,7 +10,7 @@
     <exclude name="Generic.Formatting.SpaceAfterNot" />
     <exclude name="Generic.Formatting.MultipleStatementAlignment" />
 
-    <!--<exclude name="Generic.Commenting.DocComment.SpacingBeforeTags" />-->
+    <exclude name="Generic.Commenting.DocComment.SpacingBeforeTags" />
     <exclude name="Generic.Commenting.DocComment.TagValueIndent" />
 
     <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
