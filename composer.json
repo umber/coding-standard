@@ -1,12 +1,11 @@
 {
   "name": "umber/coding-standard",
-  "description": "A close to PSR-2 coding standards, based on Doctrine just a little relaxed",
+  "description": "A coding standards for Umber projects.",
   "type": "phpcodesniffer-standard",
   "license": "MIT",
 
   "require": {
-    "doctrine/coding-standard": "4.0.0",
-    "squizlabs/php_codesniffer": "3.3.0"
+    "squizlabs/php_codesniffer": "3.3.1"
   },
 
   "extra": {

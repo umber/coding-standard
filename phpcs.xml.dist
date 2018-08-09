@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<ruleset>
+  <arg name="basepath" value="."/>
+  <arg name="extensions" value="php"/>
+  <arg name="parallel" value="80"/>
+  <arg name="report-width" value="120"/>
+  <arg name="cache" value="phpcs.cache"/>
+  <arg name="colors"/>
+  <arg value="s"/>
+
+  <rule ref="Umber" />
+</ruleset>

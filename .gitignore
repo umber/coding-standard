@@ -1,5 +1,11 @@
 /.idea
 
+/tests/stage/*
+!/tests/stage/.keep
+
 /vendor
 /composer.phar
 /composer.lock
+
+/phpcs.xml
+/phpcs.cache
