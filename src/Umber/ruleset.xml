@@ -6,6 +6,7 @@
   <rule ref="PSR2">
     <exclude name="Generic.Files.LineLength.TooLong" />
     <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses" />
+    <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingPropertyTypeHint" />
   </rule>
 
   <!-- No HTML inline -->
