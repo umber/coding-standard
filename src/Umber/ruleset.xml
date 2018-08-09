@@ -195,6 +195,7 @@
   </rule>
   <rule ref="Squiz.Commenting.InlineComment">
     <exclude name="Squiz.Commenting.InlineComment.DocBlock" />
+    <exclude name="Squiz.Commenting.InlineComment.InvalidEndChar" />
   </rule>
 
   <!-- Commenting -->
