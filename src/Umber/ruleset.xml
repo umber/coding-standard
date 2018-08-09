@@ -3,7 +3,10 @@
   <description>The Umber coding standard.</description>
 
   <!-- Starting with PSR2 -->
-  <rule ref="PSR2" />
+  <rule ref="PSR2">
+    <exclude name="Generic.Files.LineLength.TooLong" />
+    <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses" />
+  </rule>
 
   <!-- No HTML inline -->
   <rule ref="Generic.Files.InlineHTML" />
@@ -93,7 +96,6 @@
   </rule>
 
   <!-- Use statements -->
-  <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses" />
   <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse" />
   <rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine" />
   <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing" />
@@ -105,6 +107,8 @@
       <property name="linesCountBeforeFirstUse" value="1" />
       <property name="linesCountBetweenUseTypes" value="0" />
     </properties>
+
+    <exclude name="SlevomatCodingStandard.Namespaces.UseSpacing.IncorrectLinesCountBetweenSameTypeOfUse" />
   </rule>
   <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
     <properties>
@@ -167,6 +171,9 @@
   <rule ref="Squiz.Commenting.DocCommentAlignment">
     <exclude name="Squiz.Commenting.DocCommentAlignment.SpaceAfterStar" />
   </rule>
+  <rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
+    <exclude name="SlevomatCodingStandard.Commenting.DocCommentSpacing.IncorrectLinesCountBetweenDifferentAnnotationsTypes" />
+  </rule>
   <rule ref="Squiz.Commenting.FunctionComment">
     <exclude name="Squiz.Commenting.FunctionComment.EmptyThrows" />
     <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName" />
@@ -174,6 +181,7 @@
     <exclude name="Squiz.Commenting.FunctionComment.InvalidReturn" />
     <exclude name="Squiz.Commenting.FunctionComment.InvalidReturnNotVoid" />
     <exclude name="Squiz.Commenting.FunctionComment.InvalidTypeHint" />
+    <exclude name="Squiz.Commenting.FunctionComment.Missing" />
     <exclude name="Squiz.Commenting.FunctionComment.MissingParamComment" />
     <exclude name="Squiz.Commenting.FunctionComment.MissingParamTag" />
     <exclude name="Squiz.Commenting.FunctionComment.MissingReturn" />
@@ -182,6 +190,10 @@
     <exclude name="Squiz.Commenting.FunctionComment.ParamNameNoMatch" />
     <exclude name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing" />
     <exclude name="Squiz.Commenting.FunctionComment.TypeHintMissing" />
+    <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+  </rule>
+  <rule ref="Squiz.Commenting.InlineComment">
+    <exclude name="Squiz.Commenting.InlineComment.DocBlock" />
   </rule>
 
   <!-- Commenting -->
@@ -255,6 +267,7 @@
     <exclude name="Squiz.Arrays.ArrayDeclaration.SingleLineNotAllowed" />
     <exclude name="Squiz.Arrays.ArrayDeclaration.CloseBraceNotAligned" />
     <exclude name="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" />
+    <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed" />
 
     <!-- See SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma -->
     <exclude name="Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast" />
@@ -266,6 +279,34 @@
     <properties>
       <property name="spacesCountBeforeColon" value="0" />
       <property name="spacesCountAfterColon" value="1" />
+    </properties>
+  </rule>
+
+  <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
+    <properties>
+      <property name="enableEachParameterAndReturnInspection" value="true"/>
+      <property name="traversableTypeHints" type="array" value="Doctrine\Common\Collections\Collection"/>
+      <property
+        name="usefulAnnotations"
+        type="array"
+        value="
+          @covers,
+          @coversNothing,
+          @dataProvider,
+          @depends,
+          @deprecated,
+          @group,
+          @internal,
+          @link,
+          @requires,
+          @see,
+          @test,
+          @throws,
+          @uses,
+          @ORM\,
+          @Rest\,
+        "
+      />
     </properties>
   </rule>
 
