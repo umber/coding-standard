@@ -308,6 +308,7 @@
           @uses,
           @ORM\,
           @Rest\,
+          @Route
         "
       />
     </properties>
