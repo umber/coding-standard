@@ -7,6 +7,9 @@
     <exclude name="Generic.Files.LineLength.TooLong" />
     <exclude name="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses.IncorrectlyOrderedUses" />
     <exclude name="SlevomatCodingStandard.TypeHints.TypeHintDeclaration.MissingPropertyTypeHint" />
+
+    <!-- Clashes with the Slevomat version causing double comma's -->
+    <exclude name="Squiz.Arrays.ArrayDeclaration.NoComma" />
   </rule>
 
   <!-- No HTML inline -->
