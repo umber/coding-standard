@@ -8,5 +8,5 @@ use Exception;
 
 
 final class FinalClassFinalMethod{
-    final public function isFinalMethod()  :  ?string  { return null; }
+    public function isFinalMethod()  :  ?string  { return null; }
 }
