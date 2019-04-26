@@ -64,6 +64,7 @@
 
     <!-- Come on, aligning documentation -->
     <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+    <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
 
     <!-- Array syntax can be however you want, one-liners are almost always bad -->
     <exclude name="Squiz.Arrays.ArrayDeclaration.MultiLineNotAllowed" />
