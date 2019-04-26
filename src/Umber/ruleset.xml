@@ -120,23 +120,24 @@
   <rule ref="SlevomatCodingStandard.TypeHints.TypeHintDeclaration">
     <properties>
       <property name="usefulAnnotations" type="array">
-        <element value="@covers"/>
-        <element value="@coversDefaultClass"/>
-        <element value="@coversNothing"/>
-        <element value="@dataProvider"/>
         <element value="@depends"/>
+        <element value="@requires"/>
         <element value="@deprecated"/>
         <element value="@group"/>
         <element value="@internal"/>
         <element value="@link"/>
         <element value="@ODM\"/>
         <element value="@ORM\"/>
+        <element value="@Rest\"/>
         <element value="@Route"/>
-        <element value="@requires"/>
+        <element value="@uses"/>
         <element value="@see"/>
         <element value="@test"/>
+        <element value="@dataProvider"/>
         <element value="@throws"/>
-        <element value="@uses"/>
+        <element value="@covers"/>
+        <element value="@coversDefaultClass"/>
+        <element value="@coversNothing"/>
       </property>
     </properties>
   </rule>
