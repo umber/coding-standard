@@ -105,7 +105,9 @@
       <property name="annotationsGroups" type="array">
         <element value="@internal, @deprecated"/>
         <element value="@Route, @Route\" />
-        <element value="@ORM\"/>
+        <element value="@Rest, @Rest\" />
+        <element value="@ORM, @ORM\"/>
+        <element value="@Serializer, @Serializer\"/>
         <element value="@test, @depends, @dataProvider"/>
         <element value="@link, @see, @uses"/>
         <element value="@group"/>
@@ -129,6 +131,7 @@
         <element value="@ODM\"/>
         <element value="@ORM\"/>
         <element value="@Rest\"/>
+        <element value="@Serializer\"/>
         <element value="@Route"/>
         <element value="@uses"/>
         <element value="@see"/>
