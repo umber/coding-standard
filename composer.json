@@ -8,15 +8,15 @@
     "php": "^7.1",
 
     "squizlabs/php_codesniffer": "^3.3.2",
-    "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
 
-    "doctrine/coding-standard": "5.0",
-    "slevomat/coding-standard": "4.8.0"
+    "doctrine/coding-standard": "6.0.0",
+    "slevomat/coding-standard": "5.0.4"
   },
 
   "extra": {
     "branch-alias": {
-      "dev-develop": "1.1-dev"
+      "dev-develop": "4.0-dev"
     }
   }
 }

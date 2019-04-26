@@ -28,6 +28,8 @@ class ClassRepresentation{
 
     /**
      * @api
+     *
+     * @return int[]
      */
     public function arraySpacingAndComma(): ARRAY {
         $a = [ 1, 2 ];
@@ -43,8 +45,6 @@ class ClassRepresentation{
         $b = null;
 
         while($a&&$b) echo 1;
-
-        return;
     }
 
     /**

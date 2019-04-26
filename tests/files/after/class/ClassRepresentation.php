@@ -13,16 +13,19 @@ class ClassRepresentation
         return (int) 1;
     }
 
-    /** @var string */
     public const TEST_VISIBILITY = 'public?';
 
     private function typeHintChecks(int $param, ?string $test = null): string
     {
         $a = (int) 1;
         $b = (int) $a;
+
         return (string) $b;
     }
 
+    /**
+     * @return int[]
+     */
     public function arraySpacingAndComma(): array
     {
         $a = [ 1, 2 ];
@@ -44,8 +47,6 @@ class ClassRepresentation
         while ($a && $b) {
             echo 1;
         }
-
-        return;
     }
 
     /**
